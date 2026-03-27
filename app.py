@@ -42,7 +42,8 @@ if stream == "Science":
     subject = st.selectbox("Select Subject", ["Physics", "Chemistry", "Maths"])
 
     if subject == "Physics":
-        with open("notes/physics.pdf", "rb") as file:
+        
+        with open("NOTES\physics.pdf", "rb") as file:
             st.download_button(
             label="📥 Download Physics Notes",
             data=file,

@@ -43,7 +43,7 @@ if stream == "Science":
 
     if subject == "Physics":
         
-        with open("notes/physics.pdf", "rb") as file:
+        with open('notes/physics.pdf', "rb") as file:
             st.download_button(
             label="📥 Download Physics Notes",
             data=file,

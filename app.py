@@ -85,11 +85,11 @@ elif stream == "Commerce":
 elif stream == "Arts":
     subject = st.selectbox("Select Subject", ["History", "Political Science", "Physical Education"])
     if subject == "Physical Education":
-        with open("notes/physical_education.pdf","rb") as file:
+        with open("notes/physical education.pdf","rb") as file:
             st.download_button(
                 label="📥 Download Physical Education Notes",
                 data=file,
-                file_name="physical_education.pdf",
+                file_name="physical education.pdf",
                 mime="application/pdf"
             )
     else:
